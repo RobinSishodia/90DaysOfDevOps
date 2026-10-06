@@ -1,0 +1,191 @@
+2026-10-06 09:00:06 [INFO] Health check OK
+2026-10-06 09:00:53 [WARNING] Slow query detected (2.3s)
+2026-10-06 09:01:46 [INFO] User login successful
+2026-10-06 09:02:09 [INFO] User login successful
+2026-10-06 09:02:50 [INFO] User login successful
+2026-10-06 09:04:00 [INFO] Cache refreshed
+2026-10-06 09:04:21 [ERROR] Failed to write to /var/data: Permission denied
+2026-10-06 09:05:31 [INFO] Cache refreshed
+2026-10-06 09:05:44 [INFO] Request served in 120ms
+2026-10-06 09:06:11 [ERROR] Database connection timeout
+2026-10-06 09:07:32 [INFO] Cache refreshed
+2026-10-06 09:08:41 [INFO] Request served in 120ms
+2026-10-06 09:09:52 [INFO] Job scheduled: nightly-report
+2026-10-06 09:10:01 [WARNING] Slow query detected (2.3s)
+2026-10-06 09:10:20 [INFO] Cache refreshed
+2026-10-06 09:11:00 [INFO] User login successful
+2026-10-06 09:11:58 [INFO] Job scheduled: nightly-report
+2026-10-06 09:13:15 [INFO] Request served in 120ms
+2026-10-06 09:13:31 [INFO] Job scheduled: nightly-report
+2026-10-06 09:14:44 [INFO] Cache refreshed
+2026-10-06 09:15:13 [INFO] User login successful
+2026-10-06 09:16:35 [INFO] Cache refreshed
+2026-10-06 09:17:36 [INFO] Request served in 120ms
+2026-10-06 09:18:37 [INFO] Health check OK
+2026-10-06 09:19:34 [ERROR] Failed to write to /var/data: Permission denied
+2026-10-06 09:19:44 [INFO] Health check OK
+2026-10-06 09:20:11 [INFO] Request served in 120ms
+2026-10-06 09:20:38 [INFO] Health check OK
+2026-10-06 09:20:55 [WARNING] Disk usage at 78%
+2026-10-06 09:22:03 [INFO] Health check OK
+2026-10-06 09:23:24 [WARNING] Slow query detected (2.3s)
+2026-10-06 09:24:41 [INFO] Failed login attempt for user admin
+2026-10-06 09:26:06 [INFO] Cache refreshed
+2026-10-06 09:26:49 [INFO] User login successful
+2026-10-06 09:27:14 [INFO] Cache refreshed
+2026-10-06 09:27:50 [INFO] Request served in 120ms
+2026-10-06 09:28:30 [INFO] Request served in 120ms
+2026-10-06 09:29:04 [INFO] Health check OK
+2026-10-06 09:29:24 [INFO] Request served in 120ms
+2026-10-06 09:29:41 [INFO] Request served in 120ms
+2026-10-06 09:30:56 [INFO] User login successful
+2026-10-06 09:32:09 [WARNING] Disk usage at 78%
+2026-10-06 09:33:29 [INFO] Cache refreshed
+2026-10-06 09:34:31 [INFO] Health check OK
+2026-10-06 09:35:31 [WARNING] Disk usage at 78%
+2026-10-06 09:36:18 [INFO] Cache refreshed
+2026-10-06 09:36:53 [INFO] Cache refreshed
+2026-10-06 09:38:07 [INFO] User login successful
+2026-10-06 09:38:33 [INFO] User login successful
+2026-10-06 09:39:43 [INFO] User login successful
+2026-10-06 09:39:55 [INFO] Job scheduled: nightly-report
+2026-10-06 09:40:57 [INFO] User login successful
+2026-10-06 09:41:13 [ERROR] Payment API returned 503
+2026-10-06 09:42:22 [ERROR] Database connection timeout
+2026-10-06 09:42:30 [ERROR] Database connection timeout
+2026-10-06 09:43:11 [INFO] Request served in 120ms
+2026-10-06 09:43:19 [INFO] Job scheduled: nightly-report
+2026-10-06 09:43:56 [INFO] Request served in 120ms
+2026-10-06 09:44:46 [INFO] Job scheduled: nightly-report
+2026-10-06 09:45:24 [WARNING] Retrying connection to cache
+2026-10-06 09:46:08 [INFO] Health check OK
+2026-10-06 09:47:21 [CRITICAL] Kernel OOM killer invoked
+2026-10-06 09:48:17 [INFO] Request served in 120ms
+2026-10-06 09:49:43 [INFO] Cache refreshed
+2026-10-06 09:49:56 [INFO] Request served in 120ms
+2026-10-06 09:50:47 [ERROR] Out of memory in worker-3
+2026-10-06 09:50:53 [ERROR] Failed to write to /var/data: Permission denied
+2026-10-06 09:51:05 [WARNING] Slow query detected (2.3s)
+2026-10-06 09:52:23 [INFO] Request served in 120ms
+2026-10-06 09:52:50 [WARNING] Disk usage at 78%
+2026-10-06 09:53:15 [WARNING] Retrying connection to cache
+2026-10-06 09:53:49 [ERROR] Out of memory in worker-3
+2026-10-06 09:55:15 [INFO] User login successful
+2026-10-06 09:55:29 [INFO] Health check OK
+2026-10-06 09:56:30 [INFO] Job scheduled: nightly-report
+2026-10-06 09:57:28 [INFO] User login successful
+2026-10-06 09:57:38 [INFO] Cache refreshed
+2026-10-06 09:57:43 [INFO] User login successful
+2026-10-06 09:59:05 [INFO] Cache refreshed
+2026-10-06 09:59:37 [ERROR] Invalid JWT token
+2026-10-06 10:00:31 [INFO] User login successful
+2026-10-06 10:01:45 [ERROR] Database connection timeout
+2026-10-06 10:03:01 [INFO] Job scheduled: nightly-report
+2026-10-06 10:04:05 [WARNING] Retrying connection to cache
+2026-10-06 10:04:21 [ERROR] Payment API returned 503
+2026-10-06 10:05:02 [INFO] Health check OK
+2026-10-06 10:06:06 [INFO] User login successful
+2026-10-06 10:07:35 [ERROR] Payment API returned 503
+2026-10-06 10:08:47 [INFO] Failed login attempt for user admin
+2026-10-06 10:09:29 [INFO] Request served in 120ms
+2026-10-06 10:10:16 [INFO] Health check OK
+2026-10-06 10:10:34 [INFO] Health check OK
+2026-10-06 10:11:36 [INFO] User login successful
+2026-10-06 10:12:05 [INFO] Cache refreshed
+2026-10-06 10:12:29 [INFO] User login successful
+2026-10-06 10:13:53 [INFO] User login successful
+2026-10-06 10:15:19 [INFO] Request served in 120ms
+2026-10-06 10:15:39 [INFO] User login successful
+2026-10-06 10:15:48 [ERROR] Payment API returned 503
+2026-10-06 10:16:38 [INFO] Request served in 120ms
+2026-10-06 10:17:06 [WARNING] Slow query detected (2.3s)
+2026-10-06 10:18:35 [WARNING] Disk usage at 78%
+2026-10-06 10:19:05 [INFO] Cache refreshed
+2026-10-06 10:19:33 [INFO] Health check OK
+2026-10-06 10:20:06 [WARNING] Disk usage at 78%
+2026-10-06 10:20:48 [INFO] Job scheduled: nightly-report
+2026-10-06 10:20:53 [INFO] Health check OK
+2026-10-06 10:21:13 [INFO] Cache refreshed
+2026-10-06 10:21:24 [INFO] User login successful
+2026-10-06 10:21:57 [INFO] User login successful
+2026-10-06 10:22:56 [INFO] Health check OK
+2026-10-06 10:24:05 [INFO] Job scheduled: nightly-report
+2026-10-06 10:25:31 [INFO] Cache refreshed
+2026-10-06 10:26:53 [INFO] Cache refreshed
+2026-10-06 10:27:46 [INFO] User login successful
+2026-10-06 10:29:16 [INFO] Cache refreshed
+2026-10-06 10:29:56 [INFO] User login successful
+2026-10-06 10:31:19 [INFO] Request served in 120ms
+2026-10-06 10:32:07 [INFO] User login successful
+2026-10-06 10:33:34 [INFO] Job scheduled: nightly-report
+2026-10-06 10:34:55 [INFO] Cache refreshed
+2026-10-06 10:36:09 [INFO] Request served in 120ms
+2026-10-06 10:36:30 [INFO] User login successful
+2026-10-06 10:37:15 [INFO] Job scheduled: nightly-report
+2026-10-06 10:37:26 [INFO] Job scheduled: nightly-report
+2026-10-06 10:37:32 [INFO] Cache refreshed
+2026-10-06 10:37:48 [CRITICAL] Disk /dev/sda1 is 98% full
+2026-10-06 10:38:58 [INFO] Request served in 120ms
+2026-10-06 10:40:07 [INFO] Health check OK
+2026-10-06 10:41:19 [INFO] Job scheduled: nightly-report
+2026-10-06 10:42:24 [INFO] Cache refreshed
+2026-10-06 10:42:51 [ERROR] Database connection timeout
+2026-10-06 10:43:14 [WARNING] Slow query detected (2.3s)
+2026-10-06 10:43:45 [INFO] User login successful
+2026-10-06 10:45:00 [INFO] Request served in 120ms
+2026-10-06 10:45:49 [INFO] User login successful
+2026-10-06 10:46:10 [INFO] Job scheduled: nightly-report
+2026-10-06 10:46:33 [ERROR] Database connection timeout
+2026-10-06 10:47:15 [INFO] Health check OK
+2026-10-06 10:47:32 [WARNING] Slow query detected (2.3s)
+2026-10-06 10:47:58 [INFO] Health check OK
+2026-10-06 10:49:13 [INFO] Request served in 120ms
+2026-10-06 10:49:56 [ERROR] Failed to write to /var/data: Permission denied
+2026-10-06 10:51:00 [WARNING] Retrying connection to cache
+2026-10-06 10:51:31 [INFO] User login successful
+2026-10-06 10:51:46 [INFO] Job scheduled: nightly-report
+2026-10-06 10:52:06 [INFO] User login successful
+2026-10-06 10:52:30 [INFO] Request served in 120ms
+2026-10-06 10:52:38 [INFO] Health check OK
+2026-10-06 10:54:02 [INFO] Request served in 120ms
+2026-10-06 10:54:26 [INFO] Cache refreshed
+2026-10-06 10:55:36 [INFO] Cache refreshed
+2026-10-06 10:56:26 [INFO] Request served in 120ms
+2026-10-06 10:57:10 [ERROR] Invalid JWT token
+2026-10-06 10:58:01 [INFO] Job scheduled: nightly-report
+2026-10-06 10:58:08 [WARNING] Slow query detected (2.3s)
+2026-10-06 10:58:46 [INFO] Cache refreshed
+2026-10-06 10:58:54 [INFO] Job scheduled: nightly-report
+2026-10-06 10:59:56 [INFO] Request served in 120ms
+2026-10-06 11:00:01 [INFO] User login successful
+2026-10-06 11:00:46 [INFO] Request served in 120ms
+2026-10-06 11:01:27 [WARNING] Disk usage at 78%
+2026-10-06 11:02:32 [INFO] User login successful
+2026-10-06 11:03:35 [ERROR] Failed to write to /var/data: Permission denied
+2026-10-06 11:04:19 [INFO] User login successful
+2026-10-06 11:04:30 [INFO] Request served in 120ms
+2026-10-06 11:04:38 [INFO] Request served in 120ms
+2026-10-06 11:04:47 [INFO] Request served in 120ms
+2026-10-06 11:05:02 [ERROR] Out of memory in worker-3
+2026-10-06 11:05:09 [INFO] Job scheduled: nightly-report
+2026-10-06 11:06:19 [INFO] Request served in 120ms
+2026-10-06 11:07:03 [INFO] Health check OK
+2026-10-06 11:08:01 [INFO] Health check OK
+2026-10-06 11:08:41 [CRITICAL] Service payment-api is DOWN
+2026-10-06 11:09:44 [ERROR] Failed to write to /var/data: Permission denied
+2026-10-06 11:11:08 [ERROR] Database connection timeout
+2026-10-06 11:11:48 [ERROR] Config file not found
+2026-10-06 11:12:03 [INFO] Request served in 120ms
+2026-10-06 11:13:30 [INFO] User login successful
+2026-10-06 11:14:29 [INFO] Request served in 120ms
+2026-10-06 11:14:43 [INFO] Cache refreshed
+2026-10-06 11:14:51 [ERROR] Database connection timeout
+2026-10-06 11:15:46 [INFO] Health check OK
+2026-10-06 11:15:53 [INFO] User login successful
+2026-10-06 11:16:31 [INFO] Request served in 120ms
+2026-10-06 11:16:37 [ERROR] Payment API returned 503
+2026-10-06 11:17:49 [INFO] Request served in 120ms
+2026-10-06 11:19:09 [WARNING] Retrying connection to cache
+2026-10-06 11:19:22 [ERROR] Database connection timeout
+2026-10-06 11:19:27 [INFO] Request served in 120ms
+2026-10-06 11:20:12 [INFO] User login successful
