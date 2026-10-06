@@ -1,0 +1,19 @@
+========================================
+ Log Analysis Report
+========================================
+Date of analysis : 2026-10-06
+Log file         : sample_app.log
+Total lines      : 191
+Total errors     : 28
+
+--- Top 5 Error Messages ---
+      9 Database connection timeout
+      6 Failed to write to /var/data: Permission denied
+      5 Payment API returned 503
+      3 Out of memory in worker-3
+      2 Invalid JWT token
+
+--- Critical Events ---
+62:2026-10-06 09:47:21 [CRITICAL] Kernel OOM killer invoked
+127:2026-10-06 10:37:48 [CRITICAL] Disk /dev/sda1 is 98% full
+174:2026-10-06 11:08:41 [CRITICAL] Service payment-api is DOWN
