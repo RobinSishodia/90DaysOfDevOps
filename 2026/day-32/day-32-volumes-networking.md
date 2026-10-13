@@ -1,12 +1,12 @@
 # Day 32 – Docker Volumes & Networking
 
-Practice VM: Ubuntu 24.04, Docker 29.8.2. Docker Hub is blocked (see Day 29), so I can't pull `postgres`, `mysql` or any app image. Same approach as Day 29–31: my own local images, all in `lab-images/` (`./build-all.sh` rebuilds them):
+Lab environment: a cloud Linux workspace (not my local machine), Docker 29.8.2. Docker Hub is blocked (see Day 29), so I can't pull `postgres`, `mysql` or any app image. Same approach as Day 29–31: my own local images, all in `lab-images/` (`./build-all.sh` rebuilds them):
 
 | Image | What it is |
 |---|---|
 | `robin/mini-db:1.0` | MySQL/Postgres stand-in. It keeps its data in `/data` (an append-only file), so *whether data survives depends only on whether `/data` is a volume*. HTTP API: `POST /rows`, `GET /rows`, `GET /health` |
 | `robin/mini-app:1.0` | App/WordPress stand-in. Finds its database **by name** (`DB_HOST`), so it only works if container-name DNS works |
-| `robin/ubuntu-tools:1.0` | My Ubuntu-mini + `curl` + `ping` (a tiny ICMP client I wrote in Go, because the VM has no `ping` binary to copy) |
+| `robin/ubuntu-tools:1.0` | My Ubuntu-mini + `curl` + `ping` (a tiny ICMP client I wrote in Go, because the workspace has no `ping` binary to copy) |
 | `robin/mini-web:1.0` | nginx stand-in from Day 29 |
 
 I haven't run real Postgres/MySQL here. The persistence and networking behaviour comes from Docker itself and is the same for any image. Everything below is real output from this VM.
@@ -91,7 +91,7 @@ $ docker inspect bind-web --format '{{range .Mounts}}type={{.Type}} source={{.So
 type=bind source=/home/claude/lab/site dest=/www
 ```
 
-(`/www` is where my mini-web serves files. With nginx it's `/usr/share/nginx/html`. I used `curl` instead of a browser refresh because the VM has no browser.)
+(`/www` is where my mini-web serves files. With nginx it's `/usr/share/nginx/html`. I used `curl` instead of a browser refresh because the workspace has no browser.)
 
 **Named volume vs bind mount:**
 

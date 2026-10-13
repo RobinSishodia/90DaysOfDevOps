@@ -1,6 +1,6 @@
 # Day 33 – Docker Compose: Multi-Container Basics
 
-Practice VM: Ubuntu 24.04, Docker 29.8.2, Docker Compose v5.5.1. Docker Hub is blocked (see Day 29), so I can't pull `nginx`, `wordpress` or `mysql`. The runnable compose files use my own images from Day 29/32: `robin/mini-web:1.0` (nginx stand-in), `robin/mini-app:1.0` (WordPress stand-in) and `robin/mini-db:1.0` (MySQL stand-in). `../day-32/lab-images/build-all.sh` rebuilds the images. The exact WordPress + MySQL and nginx compose files the task describes are in `canonical-docker-hub/`. I could not run those here, so they are untested on this VM. Everything below is real output from this VM. I trimmed Compose's repeated "Creating/Starting" progress lines for readability.
+Lab environment: a cloud Linux workspace (not my local machine), Docker 29.8.2, Docker Compose v5.5.1. Docker Hub is blocked (see Day 29), so I can't pull `nginx`, `wordpress` or `mysql`. The runnable compose files use my own images from Day 29/32: `robin/mini-web:1.0` (nginx stand-in), `robin/mini-app:1.0` (WordPress stand-in) and `robin/mini-db:1.0` (MySQL stand-in). `../day-32/lab-images/build-all.sh` rebuilds the images. The exact WordPress + MySQL and nginx compose files the task describes are in `canonical-docker-hub/`. I could not run those here, so they are untested in this lab environment. Everything below is real output from this VM. I trimmed Compose's repeated "Creating/Starting" progress lines for readability.
 
 | Folder | Task |
 |---|---|
@@ -56,7 +56,7 @@ $ docker compose down
 $ docker ps -a | wc -l           -> 0 containers left
 ```
 
-(`curl` instead of a browser: the VM has no browser.) Compare with Day 30–32: the whole `docker run -d --name ... -p 8084:80 robin/mini-web:1.0` plus its cleanup is now a file I can commit, plus `up` and `down`. Compose also created a network, `compose-basics_default`, without being asked.
+(`curl` instead of a browser: the workspace has no browser.) Compare with Day 30–32: the whole `docker run -d --name ... -p 8084:80 robin/mini-web:1.0` plus its cleanup is now a file I can commit, plus `up` and `down`. Compose also created a network, `compose-basics_default`, without being asked.
 
 ## Task 3: Two-container setup (app + database)
 

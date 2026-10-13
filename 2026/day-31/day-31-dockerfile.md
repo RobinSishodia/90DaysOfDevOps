@@ -1,6 +1,6 @@
 # Day 31 – Dockerfile: Build Your Own Images
 
-Practice VM: Ubuntu 24.04, Docker 29.8.2. Docker Hub and the Ubuntu apt mirrors are blocked (see Day 29), so I can't `FROM ubuntu`, `FROM nginx:alpine` or `apt-get install`. Same workaround as Day 29–30: I build on my own local base images — `robin/ubuntu-mini:24.04` (a rootfs from host binaries) and `robin/mini-web:1.0` (my nginx stand-in). Every Dockerfile in this folder was built and run for real. The exact Docker Hub versions the task asks for (`FROM ubuntu` + `apt-get install -y curl`, `FROM nginx:alpine`) are in `canonical-docker-hub/`. I could not run those here, so they are untested on this VM.
+Lab environment: a cloud Linux workspace (not my local machine), Docker 29.8.2. Docker Hub and the Ubuntu apt mirrors are blocked (see Day 29), so I can't `FROM ubuntu`, `FROM nginx:alpine` or `apt-get install`. Same workaround as Day 29–30: I build on my own local base images — `robin/ubuntu-mini:24.04` (a rootfs from host binaries) and `robin/mini-web:1.0` (my nginx stand-in). Every Dockerfile in this folder was built and run for real. The exact Docker Hub versions the task asks for (`FROM ubuntu` + `apt-get install -y curl`, `FROM nginx:alpine`) are in `canonical-docker-hub/`. I could not run those here, so they are untested in this lab environment.
 
 Files in this folder:
 
@@ -145,7 +145,7 @@ $ docker logs site
 2026/10/13 16:21:47 172.17.0.1:39564 "GET / HTTP/1.1" "curl/8.5.0"
 ```
 
-I used `curl` instead of a browser because this VM has no browser. `-p 8081:80` maps host port 8081 to container port 80. The `docker logs` line proves the request reached the container. With real nginx the Dockerfile is the same two lines, see `canonical-docker-hub/web-app.Dockerfile`.
+I used `curl` instead of a browser because the workspace has no browser. `-p 8081:80` maps host port 8081 to container port 80. The `docker logs` line proves the request reached the container. With real nginx the Dockerfile is the same two lines, see `canonical-docker-hub/web-app.Dockerfile`.
 
 ## Task 5: .dockerignore
 
