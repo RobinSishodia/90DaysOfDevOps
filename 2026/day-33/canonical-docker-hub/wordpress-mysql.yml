@@ -1,5 +1,5 @@
 # Task 3 exactly as the task describes it (real WordPress + MySQL from Docker Hub).
-# NOT run on the practice VM (registries blocked). Run it on a machine with internet:
+# NOT run in my lab environment (registries blocked). Run it on a machine with internet:
 #   docker compose -f wordpress-mysql.yml up -d      # then open http://localhost:8080
 name: wordpress-real
 

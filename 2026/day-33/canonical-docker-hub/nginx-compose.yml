@@ -1,4 +1,4 @@
-# Task 2 exactly as the task describes it (real nginx). NOT run on the practice VM.
+# Task 2 exactly as the task describes it (real nginx). NOT run in my lab environment.
 #   docker compose -f nginx-compose.yml up -d     # open http://localhost:8080
 name: nginx-basics
 

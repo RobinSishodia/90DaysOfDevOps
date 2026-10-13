@@ -1,5 +1,5 @@
 # Task 1: my first Dockerfile (runnable offline version)
-# Base: my own Ubuntu-mini image (registries are blocked on the practice VM, see Day 29).
+# Base: my own Ubuntu-mini image (registries are blocked in my lab environment, see Day 29).
 FROM robin/ubuntu-mini:24.04
 
 # Stand-in for:  RUN apt-get update && apt-get install -y curl
