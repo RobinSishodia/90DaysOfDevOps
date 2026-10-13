@@ -1,0 +1,35 @@
+# Task 3 exactly as the task describes it (real WordPress + MySQL from Docker Hub).
+# NOT run on the practice VM (registries blocked). Run it on a machine with internet:
+#   docker compose -f wordpress-mysql.yml up -d      # then open http://localhost:8080
+name: wordpress-real
+
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wp-pass-change-me
+      MYSQL_ROOT_PASSWORD: root-pass-change-me
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306          # service name, not an IP
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wp-pass-change-me
+    volumes:
+      - wp_content:/var/www/html/wp-content
+
+volumes:
+  db_data:
+  wp_content:

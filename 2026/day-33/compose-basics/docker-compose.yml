@@ -1,0 +1,9 @@
+# Task 2: my first Compose file - a single web container with port mapping.
+# mini-web is my nginx stand-in (Day 29). With real nginx this would be:  image: nginx:alpine
+name: compose-basics
+
+services:
+  web:
+    image: robin/mini-web:1.0
+    ports:
+      - "8084:80"      # host:container

@@ -1,0 +1,25 @@
+# Task 5: environment variables two ways.
+#  1) written directly in the file          (ENVIRONMENT, DB_HOST, DB_PORT)
+#  2) read from a .env file via ${VARIABLE}  (SITE_TITLE, APP_PORT)
+name: env-vars
+
+services:
+  db:
+    image: robin/mini-db:1.0
+    volumes:
+      - db_data:/data
+
+  app:
+    image: robin/mini-app:1.0
+    depends_on:
+      - db
+    ports:
+      - "${APP_PORT}:80"              # from .env
+    environment:
+      ENVIRONMENT: development        # directly in the compose file
+      DB_HOST: db
+      DB_PORT: "5432"
+      SITE_TITLE: ${SITE_TITLE}       # from .env (the value is substituted by Compose)
+
+volumes:
+  db_data:

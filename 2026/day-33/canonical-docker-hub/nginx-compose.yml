@@ -1,0 +1,9 @@
+# Task 2 exactly as the task describes it (real nginx). NOT run on the practice VM.
+#   docker compose -f nginx-compose.yml up -d     # open http://localhost:8080
+name: nginx-basics
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"

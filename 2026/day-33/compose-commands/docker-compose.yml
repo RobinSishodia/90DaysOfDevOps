@@ -1,0 +1,21 @@
+# Task 4: a small stack to practise the everyday Compose commands.
+# `web` is BUILT from ./web (so `docker compose build` / `up --build` have something to rebuild),
+# `db` is a prebuilt image.
+name: compose-commands
+
+services:
+  web:
+    build: ./web
+    image: robin/compose-web:dev
+    depends_on:
+      - db
+    ports:
+      - "8086:80"
+
+  db:
+    image: robin/mini-db:1.0
+    volumes:
+      - db_data:/data
+
+volumes:
+  db_data:
