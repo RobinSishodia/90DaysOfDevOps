@@ -1,0 +1,8 @@
+# Task 6 (after): rarely-changing input (requirements.txt) goes first, the slow step runs
+# next, and the frequently-changing app.sh is copied LAST, so edits only rebuild one cheap layer.
+FROM robin/ubuntu-mini:24.04
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+RUN sleep 4 && echo "dependencies installed" > /app/deps.txt
+COPY app.sh /app/app.sh
+CMD ["/bin/bash", "/app/app.sh"]

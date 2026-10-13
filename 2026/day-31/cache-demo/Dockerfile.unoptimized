@@ -1,0 +1,7 @@
+# Task 6 (before): the frequently-changing file is copied FIRST,
+# so every edit to app.sh invalidates the cache for the slow dependency step below it.
+FROM robin/ubuntu-mini:24.04
+WORKDIR /app
+COPY . /app
+RUN sleep 4 && echo "dependencies installed" > /app/deps.txt
+CMD ["/bin/bash", "/app/app.sh"]

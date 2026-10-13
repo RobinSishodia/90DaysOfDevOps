@@ -1,0 +1,4 @@
+# Bonus: ENTRYPOINT + CMD together - ENTRYPOINT is the program, CMD is its default arguments
+FROM robin/ubuntu-mini:24.04
+ENTRYPOINT ["echo", "Greeting:"]
+CMD ["hello"]
